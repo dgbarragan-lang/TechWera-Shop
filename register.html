@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechWear Shop — Register</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="index.html"
+            ><img src="img/logo/logo.png" alt="TechWear Shop logo" /> TechWear
+            Shop</a
+          >
+          <nav aria-label="Principal">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="cart.html" class="cart-link"
+                  ><img src="img/Carrito/carrito.png" alt="cart" /> Carrito</a
+                >
+              </li>
+              <li><a href="login.html" class="btn btn-ghost">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="register-card">
+          <h2>Create an account</h2>
+          <hr class="divider" />
+          <form action="login.html" method="get" class="form-grid">
+            <div>
+              <label for="first">First name</label>
+              <input id="first" name="first" type="text" required />
+            </div>
+            <div>
+              <label for="last">Last name</label>
+              <input id="last" name="last" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="+593 555 555 5555"
+              />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" required />
+            </div>
+            <div>
+              <label for="confirm">Confirm password</label>
+              <input id="confirm" name="confirm" type="password" required />
+            </div>
+
+            <div class="full">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" />
+            </div>
+
+            <div class="full">
+              <label for="address1">Address line 1</label>
+              <input id="address1" name="address1" type="text" />
+            </div>
+            <div class="full">
+              <label for="address2">Address line 2</label>
+              <input id="address2" name="address2" type="text" />
+            </div>
+
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" />
+            </div>
+            <div>
+              <label for="state">State / Province</label>
+              <input id="state" name="state" type="text" />
+            </div>
+
+            <div>
+              <label for="zip">Postal code</label>
+              <input id="zip" name="zip" type="text" />
+            </div>
+            <div>
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="">Select country</option>
+                <option value="US">United States</option>
+                <option value="ES">España</option>
+                <option value="UK">United Kingdom</option>
+                <option value="OTHER">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="dob">Date of birth</label>
+              <input id="dob" name="dob" type="date" />
+            </div>
+
+            <div class="full">
+              <label
+                ><input type="checkbox" name="newsletter" /> Subscribe to
+                newsletter</label
+              >
+            </div>
+
+            <div class="full">
+              <label
+                ><input type="checkbox" name="terms" required /> I agree to the
+                terms and privacy policy</label
+              >
+            </div>
+
+            <div class="full">
+              <button class="btn" type="submit">Create account</button>
+            </div>
+          </form>
+          <hr class="divider" />
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>© 2026 TechWear Shop. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

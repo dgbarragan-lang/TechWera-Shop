@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechWear Shop — Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="index.html"
+            ><img src="img/logo/logo.png" alt="TechWear Shop logo" /> TechWear
+            Shop</a
+          >
+          <nav aria-label="Principal">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="cart.html" class="cart-link"
+                  ><img src="img/Carrito/carrito.png" alt="cart" /> Carrito</a
+                >
+              </li>
+              <li><a href="login.html" class="btn btn-ghost">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container login-page">
+        <section class="login-card" aria-labelledby="signin-title">
+          <h2 id="signin-title">Sign in to your account</h2>
+          <hr class="divider" />
+          <form action="index.html" method="get">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="••••••••"
+              required
+            />
+
+            <button class="btn" type="submit">Sign In</button>
+          </form>
+          <hr class="divider" />
+          <p class="small muted">
+            Don't have an account? <a href="register.html">Create account</a>
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>© 2026 TechWear Shop. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
