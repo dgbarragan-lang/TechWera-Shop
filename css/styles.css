@@ -1,6 +1,5 @@
 :root {
     --bg: #0f1720;
-    --card: #17202a;
     --muted: #9aa6b2;
     --accent: #3b82f6;
     --text: #e6eef6
@@ -47,20 +46,6 @@ p {
     margin-bottom: 1rem
 }
 
-.card-body {
-    padding: 10px
-}
-
-.card-body h3 {
-    font-size: 1rem;
-    margin-bottom: .25rem
-}
-
-.card-body p {
-    margin: 0 0 .5rem;
-    color: var(--muted)
-}
-
 .site-container {
     padding: 0
 }
@@ -95,13 +80,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 12px
-}
-
-.card {
-    background: var(--card);
-    padding: 8px;
-    border-radius: 6px;
-    color: var(--text)
 }
 
 .price {
@@ -353,4 +331,48 @@ hr.divider {
     background: rgba(255, 255, 255, 0.06);
     width: 80%;
     margin: 18px auto
+}
+
+/* Estilos para tabla de productos */
+.products-table-wrap {
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+}
+
+.products-table th,
+.products-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.products-table thead th {
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.products-table img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+@media(max-width:700px) {
+    .products-table img {
+        width: 80px;
+        height: 56px;
+    }
+    .products-table {
+        min-width: 0;
+    }
 }

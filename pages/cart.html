@@ -25,7 +25,7 @@
                   </a
                 >
               </li>
-              <li><a href="login.html" class="btn btn-ghost">Ingresar</a></li>
+              <li><a href="login.html" class="btn btn-ghost"><i class="fa-solid fa-user"></i> Ingresar</a></li>
             </ul>
           </nav>
         </div>
@@ -33,6 +33,23 @@
 
       <main class="container cart-page">
         <h2>Carrito de compras</h2>
+        <label for="checkout-progress">Progreso del pedido</label>
+        <progress id="checkout-progress" value="33" max="100">33%</progress>
+        <label> Selecciona tu ubicación </label>
+
+                <button style="margin-left: 16px; margin-top: 16px;
+                width: 60px; height: 40px; border-radius: 12px;
+                border: 2px solid gray; font-size: 24px;
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;">
+
+                    <a href="https://www.google.com/maps" target="_blank"
+                    style="text-decoration: none; color: rgb(28, 28, 91);">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </button>
+                <br>
+                <br>
         <div class="cart-layout">
           <section class="cart-items">
             <article class="cart-item">
@@ -78,7 +95,7 @@
 
       <footer class="site-footer">
         <div class="container">
-          <p>© 2026 TechWear Shop. All rights reserved.</p>
+          <p>&copy; 2026 TechWear Shop. All rights reserved.</p>
         </div>
       </footer>
     </div>
